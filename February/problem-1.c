@@ -13,7 +13,7 @@
 
 #include <stdio.h>
 
-void swapValues(int *array, int sum);
+void findASum(int *array, int sum);
 
 
 int main(int argc, char* argv[]) {
@@ -21,16 +21,16 @@ int main(int argc, char* argv[]) {
     int numbers[] = { 10, 15, 3, 7 };
     int sum = 22;
 
-    swapValues(numbers,sum);
+    findASum(numbers,sum);
 }
 
-void swapValues(int *array, int sum){
+void findASum(int *array, int sum){
 
     int num1, num2, check, final;
 
     for(int i = 0; i < sizeof(*array); i++) {
         int current = array[i];
-        
+
         for(int j = 0; j < sizeof(*array); j++ ) {
 
             if(current != array[j]) {
