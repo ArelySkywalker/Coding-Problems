@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
                         num1 = current;
                         num2 = array[j];
                         final = sum;
-                        console.log("True");
+                        return true;
                     }
                 }
             }
