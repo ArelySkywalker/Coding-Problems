@@ -41,10 +41,7 @@ void findASum(int *array, int sum){
                 check = current + array[j];
 
                 if(check == sum) {
-                    num1 = current;
-                    num2 = array[j];
-                    final = sum;
-                    printf("%d + %d = %d\n", num1, num2, sum);
+                    printf("True");
                 }
             }
         }
@@ -63,7 +60,7 @@ void findASum2(int *array, int sum) {
     for(int i = 0; i < sizeof(*array); i++) {
         for(int j = 0; j < sizeof(*array); j++) {
             if(i != j && array[i] + array[j] == sum) {
-                printf("%d + %d = %d\n", array[i], array[j], sum);
+               printf("True");
             }
         }
     }
