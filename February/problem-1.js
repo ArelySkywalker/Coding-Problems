@@ -1,5 +1,18 @@
 jQuery(document).ready(function($){
 
+    /****************************
+    *
+    * PROBLEM 1:  
+    *              Given a list of numbers a number k
+    *              return whether any two numbers from the
+    *              list add up
+    *
+    *              given [10, 15, 3, 7]
+    *              and k of 17
+    *              return true since 10 + 7 = 17
+    * 
+    ***************************/
+
     function findASum(array, sum) {
         var num1, num2, check, final;
 
