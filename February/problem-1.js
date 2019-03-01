@@ -27,14 +27,10 @@ jQuery(document).ready(function($){
                         num1 = current;
                         num2 = array[j];
                         final = sum;
+                        console.log(num1 + " + " + num2 + " = " + sum);
                     }
                 }
             }
-        }
-        if(final != null) {
-            console.log(num1 + " + " + num2 + " = " + sum);
-        }else {
-            console.log("Error: No numbers that could sum to " + sum + " found.");
         }
     }
 
