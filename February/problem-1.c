@@ -8,6 +8,8 @@
  *              given [10, 15, 3, 7]
  *              and k of 17
  *              return true since 10 + 7 = 17
+ *
+ * Author: Arely Miramontes Rodriguez
  * 
  ***************************/
 

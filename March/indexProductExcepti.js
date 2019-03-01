@@ -12,6 +12,8 @@
  *              input:  [3, 2, 1]
  *              output: [2, 3, 6]
  * 
+ * Author: Arely Miramontes Rodriguez
+ * 
  ***************************/
 
 function productOfArrayExceptSelf(array){

@@ -8,6 +8,8 @@
     #              and k of 17
     #              return true since 10 + 7 = 17
     # 
+    # Author: Arely Miramontes Rodriguez
+    #
 
 def findASum(array, sum):
     for i in range(len(array)):

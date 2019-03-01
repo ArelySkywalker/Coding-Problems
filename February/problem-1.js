@@ -11,6 +11,9 @@ jQuery(document).ready(function($){
     *              and k of 17
     *              return true since 10 + 7 = 17
     * 
+    * 
+    * Author: Arely Miramontes Rodriguez
+    * 
     ***************************/
 
     function findASum(array, sum) {
