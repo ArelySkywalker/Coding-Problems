@@ -14,6 +14,7 @@
 #include <stdio.h>
 
 void findASum(int *array, int sum);
+void findASum2(int *array, int sum);
 
 
 int main(int argc, char* argv[]) {
@@ -22,9 +23,13 @@ int main(int argc, char* argv[]) {
     int sum = 22;
 
     findASum(numbers,sum);
+    findASum2(numbers,sum);
 }
 
+// Here is my initial solution
 void findASum(int *array, int sum){
+
+    printf("My initial solution:\n");
 
     int num1, num2, check, final;
 
@@ -32,7 +37,6 @@ void findASum(int *array, int sum){
         int current = array[i];
 
         for(int j = 0; j < sizeof(*array); j++ ) {
-
             if(current != array[j]) {
                 check = current + array[j];
 
@@ -40,14 +44,28 @@ void findASum(int *array, int sum){
                     num1 = current;
                     num2 = array[j];
                     final = sum;
+                    printf("%d + %d = %d\n", num1, num2, sum);
                 }
             }
         }
     }
-    
-    if(final == sum) {
-        printf("%d + %d = %d", num1, num2, sum);
-    }else {
-        printf("Error: No numbers that could sum to %d found.", sum);
+
+    printf("\n");
+}
+
+// Here is a shorter solution to solve in one pass:
+// 
+//  Basically the same as my initial, but I used removed
+//  uneccessary variables, and made tue if loop better
+
+void findASum2(int *array, int sum) {
+    printf("New solution:\n");
+    for(int i = 0; i < sizeof(*array); i++) {
+        for(int j = 0; j < sizeof(*array); j++) {
+            if(i != j && array[i] + array[j] == sum) {
+                printf("%d + %d = %d\n", array[i], array[j], sum);
+            }
+        }
     }
+    printf("\n");
 }
