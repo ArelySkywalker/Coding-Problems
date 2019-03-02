@@ -6,7 +6,7 @@
  #              array is the product of all the numbers in the 
  #              original array except the one at i.
  #
- #              input:  [1, 2, 3, 4, 5]
+ #              input:  [1, 2, 3, 4, 5]oh no 
  #              output: [120, 60, 40, 30, 24]
  #
  #              input:  [3, 2, 1]
