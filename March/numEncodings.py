@@ -12,9 +12,11 @@
     #
 
 def numEncodings(s):
+    # This covers if the string starts with 0
     if s.startswith('0'):
         return 0
-    elif len(s) <= 1: # This covers empty string
+    # This covers if the string is empty
+    elif len(s) <= 1:
         return 1
 
     total = 0
@@ -24,3 +26,6 @@ def numEncodings(s):
 
     total += numEncodings(s[1:])
     return total
+
+n = '111'
+print(numEncodings(n))
