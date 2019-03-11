@@ -14,3 +14,4 @@ function fizzBuzz(min, max) {
 }
 
 fizzBuzz(num1,num2);
+
