@@ -17,21 +17,12 @@ jQuery(document).ready(function($){
     ***************************/
 
     function findASum(array, sum) {
-        var num1, num2, check, final;
-
         for(var i = 0; i < array.length; i++) {
-            var current = array[i];
-
             for(var j = 0; j < array.length; j++) {
-                if(current != array[j]) {
-                    check = current + array[j];
-
-                    if(check == sum) {
-                        num1 = current;
-                        num2 = array[j];
-                        final = sum;
-                        return true;
-                    }
+                if(array[i] != array[j] && array[i] + array[j] == sum) {
+                    return true;
+                }else {
+                    return false;
                 }
             }
         }
