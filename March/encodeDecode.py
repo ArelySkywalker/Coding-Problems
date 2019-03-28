@@ -18,7 +18,7 @@ def runLengthEncodeDecode(st):
     if st.isalpha():  
 
         encoded = ''
-        while st:
+        while len(st) > 0:
             i = 0
             while i < len(st) and st[0] == st[i]:
                 i += 1
